@@ -7,9 +7,16 @@ constructor vacío.
 luego informar mediante otro método el número de ISBN, el título, el autor del libro y el
 numero de páginas.
  */
-
+//importar clase del model
+import Models.Libro;
+//nombre de la app
 public class App {
-    public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+    //metodo main
+    public static void main(String[] args) {
+        //constructor del libro para llamarlo 
+        Libro libro = new Libro(null, null, null, 0);
+        //llamar metodos
+        libro.pedirInfo();
+        libro.mostrarLibro();
     }
 }
